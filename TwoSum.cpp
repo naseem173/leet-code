@@ -12,14 +12,14 @@ public:
             map[nums[i]] = i;
         }
 
-        // Search HM
+        // Search  HM
         for (int i = 0; i < nums.size(); i++)
         {
 
             int num = nums[i];
             int rem = target - num;
 
-            // checking if it exists and it not duplicates
+            //checking if it exists and it not duplicates
 
             auto wo = map.find(rem);
             if (wo != map.end() && wo->second != i)
