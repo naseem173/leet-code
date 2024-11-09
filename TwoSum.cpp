@@ -19,7 +19,7 @@ public:
             int num = nums[i];
             int rem = target - num;
 
-            // checking if it exists and it not duplicate
+            // checking if it exists and it not duplicates
 
             auto wo = map.find(rem);
             if (wo != map.end() && wo->second != i)
